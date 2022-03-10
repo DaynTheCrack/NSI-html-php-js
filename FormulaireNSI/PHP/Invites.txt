@@ -1,14 +1,1 @@
-Prénom : Alexandre;
-Nom : THOYON;
-Sexe : Homme;
-Numéro de téléphone : 0783901892;
-Ville : Nantes;
-Adresse : 93 bis rue du croissant;
-Code postal : 44119;
-Allergie(s) : pas d'allergie renseigné !!;
-Heure d'arrivée : 10h;
-Heure de départ : 18h;
-Nombre de boisson(s) : 2 de Fanta;
-Musique(s) :Skillet;
-Commentaire : Hâte d'être à la soirée BG :);
 
