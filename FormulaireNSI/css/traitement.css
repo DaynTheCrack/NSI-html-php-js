@@ -1,0 +1,32 @@
+body{
+    color: black;
+    text-decoration: currentColor;
+    text-align: center;
+    background-color: black;
+    background-image: unset;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lejdd.fr%2FInternational%2Fguerre-en-ukraine-jusquou-ira-vladimir-poutine-4096278&psig=AOvVaw2qtWy4ftCcZqXAUkDHPfMA&ust=1646736885130000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPjm8Y3rs_YCFQAAAAAdAAAAABAD);
+     
+}
+ body{
+     padding: 0%;
+     margin: 0%;
+     background-color: black;
+     background-attachment: fixed;
+     background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lejdd.fr%2FInternational%2Fguerre-en-ukraine-jusquou-ira-vladimir-poutine-4096278&psig=AOvVaw2qtWy4ftCcZqXAUkDHPfMA&ust=1646736885130000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPjm8Y3rs_YCFQAAAAAdAAAAABAD);
+     
+ }
+ header{
+     padding: 1%;
+     background-color: rgba(95, 114, 131, 0.521);    
+     border-radius: 25%;
+     background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lejdd.fr%2FInternational%2Fguerre-en-ukraine-jusquou-ira-vladimir-poutine-4096278&psig=AOvVaw2qtWy4ftCcZqXAUkDHPfMA&ust=1646736885130000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPjm8Y3rs_YCFQAAAAAdAAAAABAD);
+     
+ 
+ }
+ h2{
+     color: rgb(255, 0, 0);
+     font-size: 180px;
+     margin-top: 0%;
+    }

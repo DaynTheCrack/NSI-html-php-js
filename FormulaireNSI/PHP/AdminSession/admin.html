@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Portal admin session</title>
+	</head>
+	<body>
+	<div class="block">
+		<form id="connexion"> 
+			<h1>Accès à la session administrateur</h1>
+			<input type="text" name="identifiant" id="id" placeholder="Identifiant"><br>
+			<input type="password" name="MDP" id="MDP" placeholder="Mot de passe"><br>
+			<input type="submit" value="Se connecter">
+			<input class="dif" type="reset" value="Tout effacer">
+			<span class="erreur" name="erreur" id="erreur" style="color:red;background-color:yellow;"></span>
+		</form>
+	</div>
+		<!--JS-->
+		<script src="JS/Verif.js"></script>
+		<!--JS-->
+	</body>
+	<!--CSS-->
+	<style>
+	body{
+	margin:0;
+	padding:0;
+	}
+	.block{
+	float:left;
+	border:solid grey 2px;
+	border-radius:5%;
+	padding:3%;
+	}
+	input[type="submit"]:hover{
+	background-color:black;
+	color: white;
+	}
+	input[type="reset"]:hover{
+	background-color:black;
+	color: white;
+	}
+	input{
+	margin-left:25%;
+	}
+	.dif{
+	margin-left:0%;
+	}
+	span{
+	margin-left:25%;
+	}
+	</style>
+	<!--CSS-->
+
+</html>

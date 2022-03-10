@@ -1,0 +1,323 @@
+body{   
+    color: black;                     
+    text-decoration: currentColor;
+    text-align: center;                
+    background-image: url("background/bottom.jpg");
+    background-image: unset; 
+    overflow-x: hidden;
+    overflow-y:scroll;
+ }
+ h3{
+     color: rgba(56, 85, 179, 0.726);
+     text-align: center;
+     list-style: circle;
+     text-decoration: underline;
+     box-shadow: 3px 3px rgb(70, 94, 161), -1em 0 .4em rgba(63, 67, 116, 0.534) ;
+ 
+ }
+ #lstsex{
+     color: rebeccapurple;
+     border-radius: 12px;
+     list-style-type: circle;
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ #lstdhorraire{ 
+     color: rebeccapurple;
+     border-radius: 12px;
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+     list-style-type: circle;
+ }
+ #lstsex{
+     color: rebeccapurple;
+     border-radius: 12px;  
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ #liste{
+     color: rebeccapurple;
+     border-radius: 12px; 
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ #lstdors{
+     color: rebeccapurple;
+     border-radius: 12px;
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ #idNOM{
+     color: rebeccapurple;
+     border-radius: 12px;
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ #idPRENOM{
+     color: rebeccapurple;
+     border-radius: 12px; 
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ #idADRESSSE{
+     color: rebeccapurple;
+     border-radius: 12px; 
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ #idPRENOM{
+     color: rebeccapurple;
+     border-radius: 12px; 
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ #idCODEPOSTAL{
+     color: rebeccapurple;
+     border-radius: 12px; 
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ #idTEL{
+     color: rebeccapurple;
+     border-radius: 12px; 
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ #idVILLE{
+     color: rebeccapurple;
+     border-radius: 12px; 
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ 
+ #nbboisson{
+     color: rebeccapurple;
+     border-radius: 12px; 
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ 
+ }
+ #idTEL{
+     color: rebeccapurple;
+     border-radius: 12px; 
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ #idALLERGIE{
+     color: rebeccapurple;
+     border-radius: 12px; 
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ #idMUSIQUE{
+     color: rebeccapurple;
+     border-radius: 12px; 
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ #idBOISSON{
+     color: rebeccapurple;
+     border-radius: 12px; 
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ #idCOm{
+     color: rebeccapurple;
+     border-radius: 12px; 
+     box-shadow: 60px -10px rgba(3, 41, 122, 0.568);
+ }
+ h1{
+     color: black;
+     font-size: 50px;
+     text-align: center;
+     text-decoration: underline;
+     background-color: rgba(95, 114, 131, 0);  
+     border-radius: 12px;
+     padding: 10px; 
+     text-shadow:100%;
+     
+ }
+ h4{
+     color: rgba(53, 66, 124, 0.808);
+     font-size: 90px;
+     text-align: center;
+     border-radius: 12px;
+     padding: 10px; 
+     text-shadow:100%;
+ }
+ body{
+     padding: 0%;
+     margin: 0%;
+     background-image: url("https://xboxsquad.fr/wp-content/uploads/2020/05/Bob-L-Eponge-Bataille-Pour-Bikini-Bottom-R%C3%A9hydrat%C3%A9-Cover-MS.jpg");
+     background-attachment: fixed;
+ }
+ header{
+     padding-top: 5%;
+     padding-bottom: 10%;
+     background-color: rgba(95, 114, 131, 0.521);    
+     border-radius: 20%;
+     box-shadow: rgb(60, 111, 155);
+     box-shadow: 100%;
+     list-style: none;
+ }
+ header h1{
+     text-align: center;
+     text-shadow: darkmagenta;
+ }
+ article{
+     margin-left: 25%;
+     margin-right: 25%;
+     border-top: solid rgba(64, 72, 94, 0.712);
+     border-bottom: solid rgb(64, 72, 94, 0.712);
+     border-left: solid rgb(64, 72, 94, 0.712);
+     border-right: solid rgb(64, 72, 94, 0.712);
+     text-align: center;
+     border-radius: 13px;
+     background-color: rgba(255, 255, 255, 0.384);
+ }
+ td{
+     display:flex;
+     padding-bottom: 3%;
+ }
+ table{
+     margin: auto;
+     list-style-type: circle;
+ }
+ input + span {
+     color: rgb(0, 0, 0);
+ }
+ input:valid {
+     border-style: solid;
+     border-color: green;
+ }
+ input:invalid{
+     border-style: dashed;
+     border-color: red;
+ }
+ input:invalid+span:after {
+     content: '✖';
+     color: red;
+     border-style: dashed;
+ }
+   
+ input:valid+span:after {  
+     content: '✓';
+     color: green;
+     border-style: solid ;
+ }
+ .btn-expand{
+     margin: auto;
+ }
+ 
+ h5{
+     border: black;
+     border: 4mm ridge rgba(50, 109, 220, 0.6);
+     list-style-type: none;
+     text-decoration: none;
+     color: black;
+     border-radius: 12px;
+     border-width: 12px;
+     font-size: 27px;
+     padding-left: 12px;
+     padding-right: 12px;
+ }
+ li a{
+     text-decoration: none;
+     color: black;
+     list-style: none;
+ }
+ 
+   body {
+   background-image: url(../background/bottom.jpg);
+   transition: background 0.2s linear;
+ }
+ * {
+   box-sizing: border-box;
+ }
+ 
+ h1 {
+   font-family: sans-serif;
+   text-align: center;
+ }
+ p {
+   font-family: sans-serif;
+   text-align: center;
+ }
+ 
+ .checkbox {
+   opacity: 0;
+   position: absolute;
+   padding-left: 20px;
+ 
+ }
+ .label {
+   width: 50px;
+   height: 26px;
+   background-color: rgba(17, 17, 17, 0.664);
+   display: flex;
+   border-radius: 50px;
+   align-items: center;
+   justify-content: space-between;
+   position: static;
+   transform: scale(1.5);
+ }
+ .ball {
+   width: 20px;
+   height: 20px;
+   background-color: rgba(255, 255, 255, 0.623);
+   border-radius: 50%;
+   transition: transform 0.2s linear;
+ }
+ .checkbox:checked + .label .ball {
+   transform: translateX(24px);
+
+ }
+ .dark {
+   background-image: url(../Image/black-background-patrick-star-simple-simple-background-wallpaper-preview.jpg)
+   ;
+ }
+ .dark h3 {
+   color: rgba(255, 255, 255, 0.61);
+ }
+ .dark h3 {
+   color: rgb(255, 255, 255);
+ }
+ .dark button {
+   background-color: rgba(255, 255, 255, 0.685);
+   color: black;
+   padding-left: 20px;
+ }
+ .dark .ball {
+   background-color: rgba(0, 0, 0, 0.753);
+
+ }
+ .dark .label {
+   background-color: rgba(255, 255, 255, 0.623);
+ }
+ .cookie{
+    border-top: rgb(216, 215, 215) 5px solid;
+    border:solid 12px rgba(255, 255, 255, 0.692);
+    border-radius: 30px;
+    background: rgba(10, 65, 138, 0.623);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding:30px;
+    font-family: 'Signika Negative', sans-serif;
+}
+.text-cookie p{ 
+    color: rgb(255, 255, 255);
+}
+.button-cookie{
+    padding-top: 15px;
+    border-radius: 12px;
+}
+.button-cookie a{
+    border:solid 1px rgb(25, 37, 87);
+    padding:10px;
+    background:rgb(30, 101, 216);
+    border-radius: 7px;
+    color:rgb(97, 7, 7);
+    text-decoration: none;
+    border-radius: 12px;
+}
+.MoreInfo{
+    border: red solid;
+    border-radius: 50%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: white;
+}
+.traduction{
+    border: solid grey;
+    background-color: white;
+    border-radius: 20%;
+    
+}

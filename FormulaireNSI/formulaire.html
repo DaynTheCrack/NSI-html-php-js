@@ -1,0 +1,240 @@
+<!Doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Formulaire</title>
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/x-icon"  href="../Projet/Image/SpongeBob_stock_art.png">
+     
+    
+	</head>
+	<body>
+        <header>
+           
+                <input type="checkbox" class="checkbox" id="checkbox" onclick="pcd()">
+                <label for="checkbox" style="margin-left: 50%;" class="label">
+                  <div style="padding-left: 12px ;" class='ball'></div>
+                </label>
+
+    
+            <h4>Accueil</h4>
+            <li><a href="#formulaire"> <h5>Formulaire</h5></a></li>
+           
+           
+           
+           <li><a target="blank" href="file:///C:/Users/eugen/OneDrive/Documents/TRAVAIL/Ann%C3%A9e%202021-2022/NSI/nsi_cours-master/nsi_cours-master-1_NSI-CH9_InterfaceWeb2/1_NSI/CH9_InterfaceWeb2/ACT1_EtudeFormulaire/Projet/Untitled-1.htmannul%C3%A9ee.html"><h5>Annuler</h5></a></li>
+<!--Script Js avec une option dark et vérification d'entrée des SELECT HTML et Hidden/Visible de box traduction-->
+<!--Js-->
+<script type="text/javascript">
+    function Redirection(){
+        var valeur = document.getElementById("trad").value;
+        if (valeur == 'Oui'){
+            document.location.href="Anglais.html"
+        }
+        if (valeur != 'Oui'){
+            alert("Pas de traduction !!")
+        }
+    }
+    function CacherMessage(param){
+       document.getElementById(param).style.visibility="hidden"
+    }
+    function AfficherMessage(param){
+        document.getElementById(param).style.visibility="visible"
+    }
+    function pcd(){
+            var darkmode = document.body;
+            darkmode.classList.toggle('dark')
+          }
+    alert("Bonjour peux tu remplir ce formulaire pour mon anniversaire!!! Bonne lecture ")
+function liste(formSaisie){
+    if (formSaisie.sexe.selectedIndex == 0){
+        alert("Le champ 'Votre sexe' n'a pas bien été renseigné !!") 
+        return false
+    }
+    if (formSaisie.heureArr.selectedIndex == 0){
+        alert("Le champ 'Heure d'arrivée n'a pas bien été renseigné !!") 
+        return false
+    }
+    if (formSaisie.heureDep.selectedIndex == 0){
+        alert("Le champ 'Heure de départ' n'a pas bien été renseigné !!") 
+        return false
+    }
+    if (formSaisie.heureDors.selectedIndex == 0){
+        alert("Le champ 'Dors sur place' n'a pas bien été renseigné !!") 
+        return false
+    }
+    if (formSaisie.heureArr.selectedIndex > formSaisie.heureDep.selectedIndex){
+        alert("Tu pars avant d'arriver ??")
+        return false
+    }
+    
+}
+</script>
+<!--Js-->
+
+        </header>
+        <article>
+	   <!--Création de mon formulaire-->
+		<form target="_self" action="PHP/traitement.php" method="POST" class="form-group" name="formSaisie" id="Formulaire">
+			<table>
+                <td>
+                    <p> <label for="formulaire" id="formulaire"></label> <h1> Formulaire anniversaire </h1></p><br>
+                </td>
+                <td><p onmouseover="AfficherMessage('traduction')"  style="margin-left: 45%;border: solid grey;border-radius: 30%;background-color: white; list-style: none;">Traduire</p></td>
+                <td>
+                <block onmouseover="AfficherMessage('traduction')" onmouseout="CacherMessage('traduction')" id="traduction" class="traduction" name="traduction" style="border: solid; border-radius: 5%;background-color: white;text-align: center;">
+                    <h2 style="text-align: center;">Voulez vous vraiment traduire ?? (Oui ou Non)</h2>
+                        <p style="text-align: center;">Saisie:<input type="text" name="trad" id="trad" class="trad"><button type="button" onclick="Redirection()">Valider</button></p>
+                </block>
+            </td>
+                
+
+
+
+				<tbody>
+                <tr>  <!--Champ de saisie du menu déroulant-->
+                     <td> <label for="lstJour" class="liste"><h3>Sexe</h3></label></td>
+                    <td>
+					     <select name="sexe" id="lstsex">
+						  <option value="'Votre sexe'" disabled selected hidden>Votre sexe</option>
+						  <option value="Homme">Homme</option>              
+						  <option value="Femme">Femme</option>
+						  <option value="Autre">Autre</option>
+						  <option value="Tondeus">Tondeuse</option>
+						  <option value="Aspirateur">Aspirateur</option>
+					     </select>
+					</td>
+                    <td><label for="lstJour" class="liste"><h3> Heure d'arrivée</h3></label></td>
+                    <td>
+					     <select name="heureArr" id="lstdhorraire">
+						  <option value="'Heure d'arrivée'" disabled selected hidden>Heure d'arrivée</option>
+						  <option value="10h">10h</option>
+						  <option value="11h">11h</option>
+						  <option value="12h">12h</option>
+						  <option value="15h">15h</option>
+						  <option value="16h">16h</option>
+                          <option value="heure">17h</option>
+						  <option value="heure">18h</option>
+                            <!--mettre une fonction js qui permet de verifier si la valeur d'arrivée est inférieur à la valeur de départ-->
+					     </select>
+                         <td><label for="lstheure" class="liste"><h3> Départ</h3></label></td>
+                         <td>
+                              <select name="heureDep" id="lstdhorraire">
+                               <option value="'Heure de départ'" disabled selected hidden>Heure de départ</option>
+                               <option value="10h">10h</option>
+                               <option value="11h">11h</option>
+                               <option value="12h">12h</option>
+                               <option value="15h">15h</option>
+                               <option value="16h">16h</option>
+                               <option value="17h">17h</option>
+                               <option value="18h">18h</option>
+                       
+                              </select>
+                         </td>
+					</td>
+                    <td>
+                    </select>
+                    <td><label for="lstheure" class="liste"><h3> Dors sur place</h3></label></td>
+                    <td>
+                         <select name="heureDors" id="lstdors">
+                          <option value="'Dors sur place'" disabled selected hidden>Dors sur place</option>
+                          <option value="Oui">OUI</option>
+                          <option value="Non">NON</option>
+                  
+                         </select>
+                   </td>
+         
+					
+                </tr>
+                <tr>  <!--Champ de saisie-->
+                    <td
+                    for="uname"><h3>Nom</h3> <br> <br> <br> </label> </td>
+                    <td><input type="text" id="idNOM" name="name"  required minlength="3"  placeholder="Nom" required>
+                    <span class="validity"></span>
+                    </td>
+
+                    <td
+                    for="uname"><h3>Prénom</h3> <br> <br> <br> </label> </td>
+                    <td><input type="text" id="idPRENOM" name="TPRENOM" placeholder="Prénom" minlength="3" maxlength="10" required>
+                    <span class="validity"></span>
+                    </td>
+                    
+                    <td
+                    for="uname"><h3>Adresse</h3> <br> <br> <br> </label> </td>
+                    <td><input type="text" id="idADRESSSE" name="TPADRESSE" placeholder="Adressesse" required>
+                    <span class="validity"></span>
+                    </td>
+
+                    <td
+                    for="uname"><h3>Code postal</h3> <br> <br> <br> </label> </td>
+                    <td><input type="number" id="idCODEPOSTAL" name="TPCODEPOSTAL"  minlength="5" maxlength="5" placeholder="Code Postal" required>
+                    <span class="validity"></span>
+                    </td>
+                    
+                    <td
+                    for="uname"><h3>Numero de téléphone</h3> <br> <br> <br> </label> </td>
+                    <td><input type="number" name="TPTEL" id="idTEL" minlength="10" value="06 " placeholder="Num tel" maxlength="10" required>
+                    <span class="validity"></span>
+                    </td>
+                    
+                    <td
+                    for="uname"><h3>Ville</h3> <br> <br> <br> </label> </td>
+                    <td><input type="text" name="TPVILLE" id="idVILLE" placeholder="Ville" required>
+                    <span class="validity"></span>
+                    </td>
+                    
+                    <td
+                    for="uname"><h3>Allergies allimentaires</h3> <br> <br> <br> </label> </td>
+                    <td><input type="text" name="TPALLERGIE" id="idALLERGIE" placeholder="Allergie" optional>
+                    <span class="validity"></span>S
+                    </td>
+                    
+                    <td
+                    for="uname"><h3>Musique favorite</h3> <br> <br> <br> </label> </td>
+                    <td><input  type="text" name="TPMUSIQUE" id="idMUSIQUE" placeholder="Musique" required>
+                    <span class="validity"></span>
+                    </td>
+                    
+                    <td
+                    for="uname"><h3>Boisson apportée</h3> <br> <br> <br> </label> </td>
+                    <td><input  type="text" name="TPBOISSON" id="idBOISSON" placeholder="Boisson" required>
+                    <span class="validity"></span>
+                    <span class="MoreInfo" name="MoreInfo" id="MoreInfo" onmouseout="CacherMessage('info')" onmouseover="AfficherMessage('info')">❗</span><block id="info" name="info" class="info" style="border: solid red; border-radius: 5%;background-color: white;">Fanta, Coca Cola, Vodka, Champomi, Eau etc...</block></td>
+
+
+                    <td
+                    for="nbboisson"><h3>Nombre de boisson(s) apportée(s)</h3> <br> <br> <br> </label> </td>
+                    <td><input  type="number" name="nbboisson" id="nbboisson" value="0" min="1" max="10" placeholder="Boisson" required>
+                    <span class="validity"></span>
+                    </td>
+                    
+                    <td
+                    for="uname"><h3>Commentaires</h3> <br> <br> <br> </label> </td>
+                    <td><input type="text" size="50" style="padding-bottom: 60% !important; background-color: rgba(255, 255, 255, 0.466); border-radius:12px;box-shadow: 60px -10px rgba(3, 41, 122, 0.568); " name="TPCOM" id="#idCOm" placeholder="Le commentaire est facultatif..." optional>
+                    <span class="validity"></span>
+                    </td>
+                
+                    
+                </tr>
+            
+                <tr> 
+                    
+				</tbody>
+			</table>
+
+            <br>
+ 			<!--Boutons de contrôle-->
+			<input style="margin-left: 30%;margin-bottom : 3%; border-radius:13px; margin-top: 3% ; color : green " type="submit" class="btn-expand btn-primary"  value="Valider"  onclick="liste(formSaisie)">
+            <p style="color:red; background-color:yellow;" id="erreur"></p>
+			<input style="margin-left: 50%;margin-bottom : 4%; border-radius:13px; margin-top: 4%; color : red" type="reset" class="btn-expand"  value="Effacer le formulaire">
+		</form>
+    </article>
+    
+
+	</body>
+
+   
+        
+  
+
+</html>
